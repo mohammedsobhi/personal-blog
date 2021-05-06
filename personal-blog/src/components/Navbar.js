@@ -14,7 +14,6 @@ const Navbar = () => {
           </a>
         </li>
       </ul>
-      <button>new</button>
     </nav>
   );
 };

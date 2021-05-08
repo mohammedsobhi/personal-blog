@@ -1,4 +1,5 @@
 import Blog from "../components/Blog";
+import Tag from "../components/Tag";
 
 const Blogs = () => {
   return (
@@ -7,6 +8,7 @@ const Blogs = () => {
         <hr />
         <h2>Blogs</h2>
       </div>
+      <Tag />
       <Blog />
       <Blog />
       <Blog />

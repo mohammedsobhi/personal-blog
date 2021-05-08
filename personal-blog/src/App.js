@@ -1,17 +1,18 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
 import SocialMedia from "./components/SocialMedia";
+import Blogs from "./components/Blogs";
 
 function App() {
-  const title = "fdf project";
-
   return (
     <div className="App">
-      <Navbar />
-      <SocialMedia />
-      <div className="content">
-        <h2>{title}</h2>
-      </div>
+      <header>
+        <Navbar />
+        <SocialMedia />
+      </header>
+      <main>
+        <Blogs />
+      </main>
     </div>
   );
 }

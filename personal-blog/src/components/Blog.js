@@ -1,13 +1,18 @@
-const Blog = () => {
+const Blog = (props) => {
+  const title = props.title;
+  const tags = props.tags;
+  const date = props.date;
+
   return (
     <div className="blog">
-      <h3 className="blog-title">
-        how to be such a good developer in 10 seconds
-      </h3>
-      <span className="blog-date">May 05, 2021</span>
+      <h3 className="blog-title">{title}</h3>
+      <span className="blog-date">{date}</span>
       <ul className="tags">
-        <li className="tag">javascript</li>
-        <li className="tag">html</li>
+        {tags.map((tag) => (
+          <li className="tag" key={tag.id}>
+            {tag.title}
+          </li>
+        ))}
       </ul>
     </div>
   );

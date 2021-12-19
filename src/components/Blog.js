@@ -1,8 +1,4 @@
-const Blog = (props) => {
-  const title = props.title;
-  const tags = props.tags;
-  const date = props.date;
-
+const Blog = ({ title, tags, date }) => {
   return (
     <div className="blog">
       <h3 className="blog-title">{title}</h3>
